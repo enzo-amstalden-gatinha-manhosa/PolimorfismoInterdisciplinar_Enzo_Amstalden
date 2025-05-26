@@ -21,19 +21,19 @@ public class Fisica {
             switch (op){
                 case 1:
                     System.out.println("Calcular Energia Potencial! (Massa X Gravidade(9,8m/s²) X Altura)");
-                    System.out.println("Insira a massa(KG): ");
+                    System.out.println("Insira a massa em KG(1KG = 1000G): ");
                     double m = scanner.nextDouble();  
                     
-                    System.out.println("Insira a altura(M): ");
+                    System.out.println("Insira a altura em M(1M = 100CM)): ");
                     double h = scanner.nextDouble();
-
+                    
                     energia = new EnergiaP(m, m, h);
                     hist.add(energia);
                 break;
 
                 case 2:
                     System.out.println("Calcular Energia Cinética! ((Massa X Velocidade²) / 2)");
-                    System.out.println("Insira a massa(KG): ");
+                    System.out.println("Insira a massa em KG(1KG = 1000G): ");
                     m = scanner.nextDouble();  
                     
                     System.out.println("Insira a Velocidade(M/S): ");
@@ -45,13 +45,13 @@ public class Fisica {
 
                 case 3:
                     System.out.println("Calcular Energia Mecânica! (Energia Potencial + Energia Cinética)");
-                    System.out.println("Insira a massa(KG): ");
+                    System.out.println("Insira a massa em KG(1KG = 1000G) ");
                     m = scanner.nextDouble();  
                     
                     System.out.println("Insira a Velocidade(M/S): ");
                     v = scanner.nextDouble(); 
 
-                    System.out.println("Insira a altura(M): ");
+                    System.out.println("Insira a altura em M(1M = 100CM)): ");
                     h = scanner.nextDouble(); 
 
                     energia = new EnergiaM(m, m, h, v);
